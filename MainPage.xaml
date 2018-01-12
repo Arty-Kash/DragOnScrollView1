@@ -34,12 +34,3 @@
     
 </ContentPage>
 
-
-<!--
-            <Button Text="Button2" Clicked="Button2" 
-                    WidthRequest="80" HeightRequest="30" Margin="3,3,0,3" 
-                    TextColor="White" BorderColor="White" BorderWidth="2" />
-
-
--->
-
