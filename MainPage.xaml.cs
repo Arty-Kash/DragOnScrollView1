@@ -1,6 +1,3 @@
-﻿//using System.Text;
-//using System.Threading.Tasks;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,26 +46,6 @@ namespace DragOnScrollView
 
             AddContentView();
             OnScroll();
-
-
-            /*
-            // detect tap event
-            var tap = new TapGestureRecognizer();
-            tap.Tapped += (s, e) =>
-            {
-                if( Math.Abs(absoluteLayout.Scale - 1.0) < Math.Abs(absoluteLayout.Scale * .0001) )
-                {
-                    absoluteLayout.Scale = 0.5;
-                    //absoluteLayout.WidthRequest = scrollView.Width;
-                    //absoluteLayout.HeightRequest = scrollView.Height;
-                }
-                else
-                {
-                    absoluteLayout.Scale = 1.0;
-                }
-            };
-            scrollView.GestureRecognizers.Add(tap);
-            */
 
         }
 
