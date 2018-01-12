@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="DragOnScrollView.MainPage">
+
+    <StackLayout Margin="10, 30, 0, 0">
+        <StackLayout BackgroundColor="Gray" Padding="0,0,0,1">
+            <Label Text="Drag Items on ScrollView Demo:" BackgroundColor="White" />
+        </StackLayout>
+        <StackLayout BackgroundColor="Gray" Padding="0,0,0,1" >
+            <StackLayout Orientation="Horizontal" BackgroundColor="White" Padding="0,0,0,3">
+                <Button Text="Add ContentView" Clicked="AddContentViewButton"
+                        WidthRequest="130" HeightRequest="30" BorderColor="Blue" BorderWidth="1" />
+            </StackLayout>
+        </StackLayout>
+
+        
+        <Grid>
+            <ScrollView x:Name="scrollView" Orientation="Both" >
+                <AbsoluteLayout x:Name="absoluteLayout" />
+            </ScrollView>
+        </Grid>
+
+        <!-- Data Display Area -->
+        <StackLayout BackgroundColor="Gray" VerticalOptions="EndAndExpand" Padding="0,1,0,1">
+            <StackLayout BackgroundColor="White" >
+                <Label x:Name="Label1" Text="Scroll X =    , Y = " />
+                <Label x:Name="Label2" Text="Dragged Position X =    , Y = " />
+                <Label x:Name="Label3" Text="Display Size of ScrollView: " />
+                <Label x:Name="Label4" Text="The number of ContentView: " />
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+    
+</ContentPage>
+
+
+<!--
+            <Button Text="Button2" Clicked="Button2" 
+                    WidthRequest="80" HeightRequest="30" Margin="3,3,0,3" 
+                    TextColor="White" BorderColor="White" BorderWidth="2" />
+
+
+-->
+
