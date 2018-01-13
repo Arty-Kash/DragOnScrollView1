@@ -75,7 +75,7 @@ namespace DragOnScrollView
             }
 
             Label3.Text = "Display Size of ScrollView: " + scrollView.Width.ToString() +
-                           " x " + scrollView.Height.ToString() + "  Label3";
+                           " x " + scrollView.Height.ToString();
             //DisplayAlert("", "Scroll X = " + scrollView.Width.ToString() +
             // ", Y = " + scrollView.Height.ToString(), "OK");
         }
